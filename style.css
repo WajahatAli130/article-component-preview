@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 46%, 95%);
+    font-family: manrope;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 350px;
+    border-radius: 15px;
+    background-color: white;
+}
+.drawers{
+    max-width: 100%;
+    object-fit: fill;
+    border-radius: 15px 15px 0 0;
+}
+.card{
+    text-align: left;
+    padding: 30px 20px 15px 20px;
+}
+footer{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+footer h4{
+    padding-left: 15px;
+    padding-right: 80px;
+}
+footer p {
+    padding-left: 15px;
+}
+.michelle{
+    border-radius: 50%;
+    width: 3rem;
+    
+}
+.icon{
+    border-radius: 50%;
+    width: 2rem;
+    background-color: hsl(210, 46%, 95%);
+    object-fit:scale-down;
+}
+.secondFooter{
+    display:none;
+}
+ul{
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 0 0 15px 15px;
+    list-style-type: none;
+    height: 70px;
+}
+li{
+    padding: 20px;
+    color: white;
+}
+.secondFooterDesktop{
+    display: none;
+}
+@media (min-width: 900px){
+    .container{
+        display: flex;
+        width: 80%;
+    }
+    .card{
+        padding-bottom: 100px;
+        display: grid;
+    }
+    .michelle {
+        width: 3rem;
+        height: 3rem;
+    }
+    .icon{
+        width: 3rem;
+        height: 3rem;
+    }
+.drawers{
+    border-radius: 15px 0 0 15px;
+}
+.card h3{
+    font-size: 2rem;
+}    
+.card p{
+    font-size: 1.5rem;
+    padding-top: 15px;
+}
+.secondFooter{
+    position: absolute;
+    top: 400px;
+    right:0;
+    z-index: 2;
+}
+
+
+  
+}
